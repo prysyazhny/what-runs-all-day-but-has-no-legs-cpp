@@ -20,7 +20,6 @@ void Timer::stop() {
        return;
    }
    b = std::chrono::high_resolution_clock::now();
-   started = false;
 }
 
 std::chrono::duration<double> Timer::get_elapsed_time() const {
